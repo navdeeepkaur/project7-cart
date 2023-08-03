@@ -1,0 +1,105 @@
+.list{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center; 
+}
+
+.left{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.left .single{
+    width: 40%;
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    margin: 15px;
+    padding: 7px;
+    align-items:stretch;
+}
+
+.right{
+    width: 35%;
+    margin-top: 15px;
+}
+
+.single:hover{
+    transform: scale(1.04);
+    transition: 0.4s;
+}
+
+.image{
+    height:250px;
+    width:100%;
+}
+
+.image img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.single .content{
+    display: flex;
+    flex-direction: column;
+}
+
+.add{
+    margin-top:10px;
+}
+
+.checkout{
+    width: 98%;
+}
+
+.single button, .checkout button{
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    background-color: #f5e8d3;
+    font-weight: 600;
+    color:#4a4945;
+    padding: 3px;
+    cursor: pointer;
+}
+
+button:hover{
+ cursor: pointer;   
+}
+
+.item-price{
+    margin-top: 5px;
+}
+
+@media only screen and (max-width:750px)
+{
+    .list{
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    .left, .right{
+        width: 95%;
+    }
+
+    .single:hover{
+        transform:none;
+    }
+}
+
+@media only screen and (max-width:320px)
+{
+    .cart{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:500px)
+{
+    .left .single{
+        width: 70%;
+    }
+}
